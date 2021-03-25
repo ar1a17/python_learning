@@ -1,4 +1,4 @@
-class Person: # parent class
+"""class Person: # parent class
   def __init__(self, fname, lname):
     self.firstname = fname
     self.lastname = lname
@@ -13,3 +13,4 @@ class Student(Person): # child class
     self.fathername="vs rawat" # additional option
 x = Student("ajay", "rawat")
 print("my name is "+x.firstname, x.lastname,"and my fathername is "+x. fathername,"and my graduationyear is ", +x.graduationyear)
+"""
