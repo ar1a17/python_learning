@@ -70,16 +70,16 @@
 #    print(b)
 #    a,b=b, a+b
 #multiplication table
-#i = 1
-#print("-" * 50)
-#while i < 11:
-#    n = 1
-#    while n <= 12:
-#        print("%4d" % (i * n), end=' ')
-#        n += 1
-#    print()
-#    i += 1
-#print("-" * 50)
+"""i = 1
+print("-" * 50)
+while i < 11:
+    n = 1
+    while n <= 12:
+        print("%4d" % (i * n), end=' ')
+        n += 1
+    print()
+    i += 1
+print("-" * 50)"""
 
 #printing star
 #row=int(input("enter the number of row:"))
@@ -100,9 +100,9 @@ print(str[0:7])"""
     print(i)
 else:
     print("bye")"""
-a=['ajay','ashutosh']
+"""a=['ajay','ashutosh']
 for c in a:
-    print(c)
+    print(c)"""
 #append
 """a=[2,65,6,4]
 a.append(45)
@@ -110,3 +110,7 @@ print(a)
 """
 """data={'ajay':'','ashutosh','anil'}
 print(data)"""
+
+from mydata import person1
+
+print (person1["country"])
