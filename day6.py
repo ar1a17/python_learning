@@ -70,28 +70,96 @@ print("sum of the array",ans)
 """
 
 #exercise 4
-# Python3 program to find maximum
-# in arr[] of size n
-
-# python function to find maximum
-# in arr[] of size n
+"""
 def largest(arr,n):
 
-	# Initialize maximum element
+
 	max = arr[0]
 
-	# Traverse array elements from second
-	# and compare every element with
-	# current max
+
 	for i in range(1, n):
 		if arr[i] > max:
 			max = arr[i]
 	return max
 
-# Driver Code
+
 arr = [10, 324, 45, 90, 9808]
 n = len(arr)
 Ans = largest(arr,n)
-print ("Largest in given array is",Ans)
+print ("Largest in given array is",Ans)"""
 
-# This code is contributed by Smitha Dinesh Semwal
+
+
+
+"""def sumOfSeries(n):
+    x = (n * (n + 1)  / 2)
+    return (int)(x * x)
+
+n = 5
+print(sumOfSeries(n)"""
+
+
+"""
+
+import psycopg2
+
+con = psycopg2.connect(database="postgres", user="postgres", password="1234", host="127.0.0.1", port="5432")
+#make cursor
+cur = con.cursor()
+cur.execute('''CREATE TABLE STUDENT
+      (ADMISSION INT PRIMARY KEY     NOT NULL,
+      NAME           TEXT    NOT NULL,
+      AGE            INT     NOT NULL,
+      COURSE        CHAR(50),
+      DEPARTMENT        CHAR(50));''')
+print("Table created successfully")
+
+con.commit()
+con.close()
+
+"""
+
+
+"""
+import psycopg2
+
+con = psycopg2.connect(database="postgres", user="postgres", password="1234", host="127.0.0.1", port="5432")
+print("Database opened successfully")
+
+cur = con.cursor()
+
+cur.execute("INSERT INTO STUDENT (ADMISSION,NAME,AGE,COURSE,DEPARTMENT) VALUES (3420, 'John', 18, 'Computer Science', 'ICT')");
+
+con.commit()
+print("Record inserted successfully")
+con.close()
+"""
+"""
+#retriving data
+import psycopg2
+
+con = psycopg2.connect(database="postgres", user="postgres", password="1234", host="127.0.0.1", port="5432")
+
+
+cur = con.cursor()
+cur.execute("SELECT admission, name, age, course, department from STUDENT")
+rows = cur.fetchall()
+
+for row in rows:
+    print("ADMISSION =", row[0])
+    print("NAME =", row[1])
+    print("AGE =", row[2])
+    print("COURSE =", row[3])
+    print("DEPARTMENT =", row[4], "\n")
+
+print("Operation done successfully")
+con.close()
+"""
+
+CREATE DATABASE suppliers;
+conn = psycopg2.connect("dbname=suppliers user=postgres password=postgres")
+conn = psycopg2.connect(
+    host="localhost",
+    database="suppliers",
+    user="postgres",
+    password="Abcd1234")

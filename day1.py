@@ -111,6 +111,28 @@ print(a)
 """data={'ajay':'','ashutosh','anil'}
 print(data)"""
 
-from mydata import person1
+"""from mydata import person1
 
-print (person1["country"])
+print (person1["country"])"""
+
+
+
+
+
+"""import psycopg2
+con = psycopg2.connect(
+            host = "localhost",
+            database="testdb",
+            user = "postgres",
+            password = "1234",
+            port=5432)
+print("connect to postgresSQL DB")"""
+
+
+
+
+import psycopg2
+
+con = psycopg2.connect(database="postgres", user="postgres", password="1234", host="127.0.0.1", port="5432")
+
+print("Database opened successfully")
