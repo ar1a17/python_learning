@@ -155,11 +155,3 @@ for row in rows:
 print("Operation done successfully")
 con.close()
 """
-
-CREATE DATABASE suppliers;
-conn = psycopg2.connect("dbname=suppliers user=postgres password=postgres")
-conn = psycopg2.connect(
-    host="localhost",
-    database="suppliers",
-    user="postgres",
-    password="Abcd1234")
