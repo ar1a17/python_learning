@@ -107,7 +107,7 @@ b4.pack(side = BOTTOM)
 """top.mainloop()"""
 
 
-from tkinter import *
+"""from tkinter import *
 
 top = Tk()
 sb = Scrollbar(top)
@@ -122,3 +122,4 @@ mylist.pack( side = LEFT )
 sb.config( command = mylist.yview )
 
 mainloop()
+"""
