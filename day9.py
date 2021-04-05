@@ -10,10 +10,3 @@ print(y["age"])"""
 x='{name:ajay,city:delhi,age:30}'
 y=json.dumps(x)
 print(y)"""
-
-
-from tkinter import *
-
-top = Tk()
-
-top.mainloop()
